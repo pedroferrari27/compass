@@ -9,3 +9,7 @@ __sobre mim:__  atualmente cursando o curso de ciencia da computação, na unive
               [githhub](https://github.com/pedroferrari27)
 
 [link para os certificados gerados](https://github.com/pedroferrari27/compass/tree/main/certificados_completo)
+
+__resumos de aprendizado:__
+
+*[Sprint 1](https://github.com/pedroferrari27/compass/tree/main/sprint_1/resumos)
