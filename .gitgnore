@@ -1,6 +1,7 @@
 # ignore os seguintes arquivos
 
-/teste.txt
+teste.txt
 
-/testeginore
+testeginore/
+
 
