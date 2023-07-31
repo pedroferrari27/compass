@@ -1,0 +1,90 @@
+commandos basicos:
+
+git add -a -m "mensagem"   , mensagem opcional
+
+git fetch - buscar outras branches , util para trabalhar em branches de outros devs -  git fetch -a
+
+git pull - para receber atualizaçoes do repositório e da branch remota - podemos utilizar para atualizar a master* - git pull
+
+git push - enviar atualizações, pode eenviar e a tualizar branches - (só envia arquivos commited, n envia apenas os added)
+
+git remote - para adicionar um repo ou remover um repo para poder trabalhar em cima, para mudar repos no trabalho - git remote re origin para remover - git remote add origin https:... para adicionar
+
+submodulos - para ter mais de um projeto em um mesmo repo. - git submodule  -- git submodule adde https:repo... nomedodiretorionovo  -- git submodule remove 
+
+adicionar em submodule e pushar - git push --recurse-submodules=on-demand
+
+git show - dá informaçoes sobre a branch- tambem podemos pegar informaçoes de certa tag com - git show <tag>
+
+git diff - pra ver a diferença atual de um branch seu com outro branch ou no remoto . tambem podemos usar git diff master
+
+git shortlog - para um log resumido
+
+verificação e manuntenção:
+
+git clean - para remover os arquivos que não foram added , ou seja , não trakeados pelo git, tambem usado pra remover arquivos temporarios.
+
+git gd , ou garbage collector, forma automatizada que remove arquuvos que julga não mais nescessarios, como os temporarios de teste
+
+git fsck , ou fyle sistem check, verifica corrupção em arquivos ou outros problemas gerais de integridade - comando de rotina
+
+git reflog, para um log mis detalhado, expira em 30 dias
+
+git archive para transformar um repositório trakeado em um arquivo comopactado, como zip.  - git archive --format zip --output nomerepo.zip master
+
+github:
+
+na aba issue podemos criar tarefas e notas de bugs a resolver , cada uma deve ter uma label e formato unico. bom para organização
+
+pulll request é para poder ter funcionalidades criadas por outros colaboradores e pode ser adicionada posteriormente ao master branch e complementar o projeto.
+
+o dono do repositório pode criar pull requests tambem e deve administrar qual das respostas deve ser adicionadas ao projeto quando enviadas (fazer merge) -> analise 
+
+há tambem resolução de conflitos nesta parte
+
+fluxo basico - cria um branch- desenvolve do repositorio - envia o codigo(push) - cria o pull request - alguem analisa - aprova e faz merge - atualiza a produção
+
+aba actions para automatizar o deploy.
+
+aba wiki para colocar uma documentação do projeto e tirar duvidas e bugs conhecidos
+
+aba insights com informaçoes sobre colaboradores , forks , commits , para ter ideia do progresso do projeto
+
+gists- pequenos blocos decodigo que podem ser hospedados no github. usado para armazenar pequenas soluçoes para manter no github, especie de mini repositorio
+
+private branches - branches visiveis para o usuario, o queal compartilharemos para o branch remoto com a funcionalidade pronta e funcional, assim evitamos commits e push repetitivos para o controle de versoes.no fim ,podemos dar um rebase nela e depois enviar - git rebase <atual> <funcionalidade> -i
+
+commits bem feitos - consciso , separar corpo da mensagem do assunto, explicar o porque e como do commit ,não como o codigo foi escrito
+
+marakdown basico:
+
+markdown adiciona estilo as paginas, o arquvio readme.md pode utilizar de markdown
+
+cabeçalhos em markdown(headings do html) são marcados pelo #
+
+header 1 -> #  header dois ->## header 3 -> ### 
+
+enfase -> negrito - **texto** ou __texto__
+          italico *texto* ou _texto_ 
+          é possivel combinar os 2
+
+listas não ordenadas começam com  * item
+ordenadas começam com   1.item   usasse tab para ordenalos dentro da propia lista
+
+inserir imagens ->  sintaxe: ![Texto Alt](link imagem) -> pode estar na repo ou externo, porem é bom incluir na repo para o remoto
+
+inserir links -> [texto do link](link)   link do github pode ser inserido de forma direta
+
+inserir codigo para github - ``` codigo ```  - markdown para github
+
+lista de tarefas - [x] concluida   []não concluida
+
+portifolio:
+github pages - forma gratuita do github de hospedar portifolios ou documentação de projetos
+
+criar pagina -> criar um repositorio com o nome nomedousuario.github.io
+entaão clonar o repositorio->adicionar codigo a branch maste_> push
+
+
+
+

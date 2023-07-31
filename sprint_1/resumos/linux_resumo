@@ -1,0 +1,61 @@
+este resumo contem commandos e utilidades aprendidos no curso
+
+commandos basicos:
+
+ls -> lista arquivos no diretório atual
+
+cd -> usado pra navegar diretorios 
+   -> usado para adentrar um diretorio ou pasta que está no diretorio atual ou usado para entrar em um diretorio que não está atualmente
+   -> utilizar TAB para completar com arquivos ou diretorios disponiveis no diretorio atual
+   ->cd - :retorna para o diretório anterior  
+
+pwd:
+
+rm -> remove arquivo
+
+touch->
+
+cat->
+
+grep->
+
+
+
+alterando permissões:
+
+permissoes  -> chmod  <numero> file/dir
+
+0- sem permissão
+1-executar :   --x
+2-escrever  :  -w-
+3-ler e executar : -wx
+4-ler : r--
+5-ler e executar : r-x
+6-ler e escrever : rw-
+7-ler,escrever e executar : rwx
+
+primeiro numero representa o dono do arquivo, o segundo doo grupo de usuarios pertencente, e o terceiro, os demais
+
+exemplos  :  chmod 777  ->todos tem permissoes para tudo
+             chmod 400  ->apenas o dono tem permissão de leitura
+             chmod 764  ->dono tem todas,grupo pode ler e alterar e demais só executar
+             chmod 000  ->ninguem tem permissão para nada,só com sudo e root 
+             
+permissões simbolicas - utilizando args , + para adicionar uma permissão, - para remover uma permissão, e = substitui uma permissão
+
+esse argumentos são aplicados no arquivo sobre o usuario:  u:  dono do arquivo
+                                                           g:  grupo
+                                                           o:  outros
+                                                           a:  todos
+                                                           
+                                                           
+                                                           
+      ex      :  chmod o=x : concede apenas permissão de executar para outros        
+                 chmod g-w : remosve a permissão de escrita para grupos
+                 chmod u+rw: concedendo permissão de ler e escrever para user/owner
+                                                   
+                                                           
+alterar o propietario do arquivo:    chown  <usuario> arquivo.
+alterando o grupo tbm   : chown <usuario>:<grupo> arquivo
+
+alterar o grupo do arquivo apenas : chgro <grupo> arquivo
