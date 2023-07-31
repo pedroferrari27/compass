@@ -2,24 +2,32 @@ este resumo contem commandos e utilidades aprendidos no curso
 
 commandos basicos:
 
-ls -> lista arquivos no diretório atual
+ls -> lista arquivos no diretório atual, ls- paara diretório anterior
 
 cd -> usado pra navegar diretorios 
    -> usado para adentrar um diretorio ou pasta que está no diretorio atual ou usado para entrar em um diretorio que não está atualmente
    -> utilizar TAB para completar com arquivos ou diretorios disponiveis no diretorio atual
    ->cd - :retorna para o diretório anterior  
 
-pwd:
+pwd:lista o caminho atual
 
 rm -> remove arquivo
 
-touch->
+touch-> criar arquivos
 
-cat->
+cat->gerar arquivos e copiar de um arquivo para ourtro
 
-grep->
+grep->procurar por palavras, ou suffixos e prefixos, em um diretório ou arquivo
+
+cp -> copiar arquivo
+mkdir->criar diretorio
+rmdir->remover diretório
+mv-> mover arquivos
 
 
+verificar grupos: getent groups
+criar grupos: groupadd -g numero nome
+remmover grupos: grouprm grupo
 
 alterando permissões:
 
