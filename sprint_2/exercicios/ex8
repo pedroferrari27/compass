@@ -1,0 +1,5 @@
+SELECT cdvdd ,nmvdd from tbvendedor v
+JOIN (SELECT cdven,dtven,cdcli ,nmcli ,cidade ,estado ,pais ,cdpro ,nmpro ,tppro ,qtd ,und ,vrunt ,cdvdd as cdvddr,cdcanalvendas ,nmcanalvendas,status,deletado  FROM tbvendas t ) as vend ON v.cdvdd = vend.cdvddr
+where vend.status ='Concluído' 
+GROUP BY v.cdvdd, v.nmvdd
+ORDER BY COUNT(vend.cdven) DESC LIMIT 1

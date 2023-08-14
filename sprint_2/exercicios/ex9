@@ -1,0 +1,3 @@
+SELECT cdpro ,nmpro FROM tbvendas vend WHERE  dtven > '2014-02-03' and dtven <  '2018-02-02'
+group by nmpro 
+order by SUM(qtd) DESC LIMIT 1

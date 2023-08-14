@@ -1,0 +1,5 @@
+SELECT nome FROM autor a 
+left join livro l on a.codautor = l.autor 
+group by a.nome
+HAVING  COUNT(l.autor)= 0
+

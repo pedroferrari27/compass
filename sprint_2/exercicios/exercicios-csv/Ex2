@@ -1,0 +1,5 @@
+SELECT count(l.cod) as quantidade, nome,estado,cidade from editora e 
+left join livro l  on l.editora = e.codeditora 
+left join endereco e2 on e2.codendereco = e.endereco 
+GROUP by nome 
+HAVING quantidade > 0

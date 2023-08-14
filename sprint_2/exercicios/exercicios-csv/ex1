@@ -1,0 +1,3 @@
+select valor,titulo  from livro 
+order by valor DESC 
+limit 10
