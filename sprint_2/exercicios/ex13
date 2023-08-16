@@ -1,0 +1,8 @@
+SELECT cdpro, nmcanalvendas, nmpro,sum(qtd)as quantidade_vendas from tbvendas t 
+where nmcanalvendas = 'Ecommerce' and status = 'Concluído'
+group by cdpro 
+UNION 
+SELECT cdpro, nmcanalvendas, nmpro ,sum(qtd)as quantidade_vendas from tbvendas t 
+where nmcanalvendas = 'Matriz' and status = 'Concluído'
+group by cdpro 
+order by quantidade_vendas asc

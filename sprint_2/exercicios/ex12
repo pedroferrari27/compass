@@ -1,0 +1,6 @@
+SELECT cddep, nmdep, dtnasc,SUM(vrunt*qtd) as valor_total_vendas from tbvendedor v
+join (select cddep , nmdep,dtnasc,sxdep,cdvdd as cdvddp,inepescola from tbdependente d) as dp on dp.cdvddp = v.cdvdd  
+JOIN (SELECT cdven,dtven,cdcli ,nmcli ,cidade ,estado ,pais ,cdpro ,nmpro ,tppro ,qtd ,und ,vrunt ,cdvdd as cdvddr,cdcanalvendas ,nmcanalvendas,status,deletado  FROM tbvendas t ) as vend ON v.cdvdd = vend.cdvddr
+where vend.status ='Concluído' 
+group by cddep
+order by valor_total_vendas asc limit 1

@@ -1,0 +1,4 @@
+SELECT estado, ROUND(SUM(qtd*vrunt)/COUNT(cdven),2) as gastomedio from tbvendas t
+where status = 'Concluído'
+group by estado 
+ORDER by gastomedio desc
