@@ -1,4 +1,5 @@
-SELECT nome,cod,codEditora, from autor a 
+SELECT nome from autor a 
 left join livro l on l.autor = codautor  
 left join(select codEditora,e2.endereco from editora e2) as e on l.editora  = e.codeditora
-left JOIN endereco en on e.endereco = en.codendereco not HAVING  estado = 'RIO GRANDE DO SUL' OR  estado = 'PARANÁ'  
+left JOIN endereco en on e.endereco = en.codendereco where estado = 'SÃO PAULO'  
+group by nome
