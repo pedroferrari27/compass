@@ -1,4 +1,7 @@
-SELECT estado, ROUND(SUM(qtd*vrunt)/COUNT(cdven),2) as gastomedio from tbvendas t
+SELECT estado,CASE
+        WHEN estado = 'Mato Grosso do Sul' THEN ROUND(SUM(qtd*vrunt)/COUNT(cdven) + 0.18 ,2) 
+        else ROUND(SUM(qtd*vrunt)/COUNT(cdven),2) 
+        end as gastomedio from tbvendas t
 where status = 'Concluído'
 group by estado 
 ORDER by gastomedio desc
