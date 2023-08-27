@@ -1,10 +1,10 @@
-    primeirosNomes = ['Joao', 'Douglas', 'Lucas', 'Jos√©']
-    sobreNomes = ['Soares', 'Souza', 'Silveira', 'Pedreira']
-    idades = [19, 28, 25, 31]
+primeirosNomes = ['Joao', 'Douglas', 'Lucas', 'JosÈ']
+sobreNomes = ['Soares', 'Souza', 'Silveira', 'Pedreira']
+idades = [19, 28, 25, 31]
     
 for i in range(len(idades)):
-    res = "#" + str(i) + " - " + str(primeirosNomes[i]) + " " + str(sobreNomes[i]) + " est√° com " + str(idades[i]) + "anos" 
+    res =  str(i) + " - " + str(primeirosNomes[i]) + " " + str(sobreNomes[i]) + " est· com " + str(idades[i]) + " anos" 
     print(res)
 
 
-#0 - Jo√£o Soares est√° com 19 anos
+#VocÍ deve Utilizar a funÁ„o enumerate().
