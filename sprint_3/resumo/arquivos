@@ -1,0 +1,82 @@
+manipulação de arquivos
+
+
+python
+
+arquivo = open("nome do arquivo") para abrir
+dados = arquivo.read() para ler
+arquivo.close() para fechar
+
+e a partir disso criamos uma variavel dados para podermos trabalhar com os recursos do arquivo
+
+#no .read, adicionar.decode() para formatos diferentes
+
+for registro in dados.splitlines(): para pegar dados de cada linha
+
+registro.split(',') para receber dados de um csv
+
+e outras opçoes com o format
+
+obs: ao usar format, utilizar * no split para pegar multiplos dados
+ex: 'nome : {}, idade: {}'.format(*registro.split(","))
+
+
+try - finaly para abrir e fechar de forma segura
+
+possivel abrir com: with open("nome arquivo") as "alias" para fechar depois
+
+
+podemos usar o modulo csvreader do python para facilitar
+
+csv.reader() e csv.writer()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
