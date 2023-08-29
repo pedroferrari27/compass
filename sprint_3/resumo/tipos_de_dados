@@ -1,0 +1,23 @@
+tuplas:
+
+tipo imutavel
+conjunto de 2 (ou mais)  valores
+
+declaração
+
+tupla = tuple()
+ou 
+tupla = ()
+
+
+de um elemento :
+
+tupla = ('um',)
+
+de dois elementos 
+
+tupla = ('um',1)
+
+para mais elementos , colocar mais virgulas
+
+o lugar de cada elemento é o index
