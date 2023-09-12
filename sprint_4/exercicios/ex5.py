@@ -1,44 +1,58 @@
-import pandas as pd
-import numpy as np
+#import pandas as pd
+#import numpy as np
 
 
-colunas = ['Nome','N1','N2','N3','N4','N5']
+#colunas = ['Nome','N1','N2','N3','N4','N5']
 
-dataframe =  pd.read_csv('estudantes.csv',names = colunas)
-dataframe =dataframe.sort_values(by='Nome')
-for row in dataframe.index:
+#dataframe =  pd.read_csv('estudantes.csv',names = colunas)
+#dataframe =dataframe.sort_values(by='Nome')
+#for row in dataframe.index:
     #dataframe['Name'][row],dataframe['N1'][row], dataframe['N2'][row] dataframe['N3'][row], dataframe['N4'][row] dataframe['N5'][row]
-    nome = dataframe['Nome'][row]   
-    notas = np.array([dataframe['N1'][row], dataframe['N2'][row],dataframe['N3'][row],dataframe['N4'][row],dataframe['N5'][row]])
-    notas = sorted(notas,reverse=True)[2:]
-    media = round(np.mean(notas),2)
-    print(f"Nome: {nome} Notas: [{notas[0]}, {notas [1]}, {notas[2]}] Média: {media}") 
+#    nome = dataframe['Nome'][row]   
+#    notas = np.array([dataframe['N1'][row], dataframe['N2'][row],dataframe['N3'][row],dataframe['N4'][row],dataframe['N5'][row]])
+#    notas = sorted(notas,reverse=True)[2:]
+#    media = round(np.mean(notas),2)
+#    print(f"Nome: {nome} Notas: [{notas[0]}, {notas [1]}, {notas[2]}] Média: {media}") 
     
 
 # codigo em pandas
 
 
 
+# codigo sem pandas
 
-#with open("estudantes.csv","r") as arquivo:
-#   linha = [] 
+with open("estudantes.csv","r") as arquivo:
+    linha = [] 
     #pegando cada linha do csv em uma lista
-#    for lin in arquivo:
-#        linha.append(lin.strip())
-    #print(linha)
-#    tabela = []
-#    for i in linha:
-#        tabela.append(list(i.split(",")))
+    for lin in arquivo:
+        linha.append(lin.strip())
+     #   print(linha)
+    tabela = []
+    for i in linha:
+        tabela.append(list(i.split(",")))
         
+    #################################################    
+    #colocando em ordem alfabética
     
-#    tabela = sorted(tabela, key=lambda x: x[0])
+    nomelinha = []
+    k = 0
+    for i in tabela:
+        nomelinha.append((i[0],k))
+        k = k+1
    
+    nomelinha = sorted(nomelinha)
     
-#    for line in tabela:
-#        nome = line[0]
-#        notas = map(int,[line[1],line[2],line[3],line[4],line[5]])
-#        notas = sorted(notas,reverse = True)[2:]
-#        media = round(sum(notas)/3,2)
+    tabelanova = []
+    for i in nomelinha:
+       tabelanova.append(tabela[i[1]]) 
+    
+    #################################################
+    
+    for line in tabelanova:
+        nome = line[0]
+        notas = map(int,[line[1],line[2],line[3],line[4],line[5]])
+        notas = sorted(notas,reverse = True)[:-2]
+        media = round(sum(notas)/3,2)
         
- #       print(f"Nome: {nome} Notas: [{notas[0]}, {notas [1]}, {notas[2]}] Média: {media}") 
+        print(f"Nome: {nome} Notas: [{notas[0]}, {notas [1]}, {notas[2]}] Média: {media}") 
     
