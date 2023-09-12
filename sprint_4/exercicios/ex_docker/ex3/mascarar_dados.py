@@ -7,8 +7,9 @@
 #4 - Retornar ao passo 1
 
 import hashlib
+import sys
+ 
+for valor in sys.argv[1:]:
+  print(hashlib.sha1(valor.encode()).hexdigest())
 
-
-while True:
-  print(hashlib.sha256(input().encode()).hexdigest())
 

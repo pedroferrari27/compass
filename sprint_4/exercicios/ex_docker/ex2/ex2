@@ -1,0 +1,5 @@
+sim. para reiniciar um conteiner já utilizado ou parado , podemos usar o comando 
+
+docker start <container id> 
+
+caso seja nescessario usar uma imagem atualizada, deveremos criar um novo conteiner para utilizar esta nova imagem

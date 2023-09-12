@@ -1,3 +1,6 @@
+
+docker ps -a para ver todos os conteiners
+
 execução container iterativa: -it
 
 execução em background ; -d
@@ -34,3 +37,5 @@ drivers : bridge -> entre containers
           host -> conteiner e maquina hospedando docker
           macvlan -> entre um MAC
           plugins -> para extensoes de terceiros
+          
+network create <nome>           
