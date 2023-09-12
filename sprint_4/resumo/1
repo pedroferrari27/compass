@@ -1,0 +1,36 @@
+execução container iterativa: -it
+
+execução em background ; -d
+
+expor porta é usando a porta  :  doker run -p <porta> <imagem>
+geralmente porta 80 para localhost
+
+stop ou start <id ou nome>  para parar ou resumir o processo
+
+
+
+mudar nome  flag:  --nome <nome>
+
+verificar logs :  docker logs <id>
+
+remover: docker -rm
+
+verificar processamento  -  docker stats
+
+autenticaçap vcom docker login
+
+docker push <imagem> para o hub
+
+para atualizar a imagem no hub, é presciso alterar a tag e entao dar push
+
+docker pull e run 
+
+volumes - para persistir dados
+
+bind mount para atualização em tempo real do projeto e faze builds incrementais
+
+
+drivers : bridge -> entre containers
+          host -> conteiner e maquina hospedando docker
+          macvlan -> entre um MAC
+          plugins -> para extensoes de terceiros
