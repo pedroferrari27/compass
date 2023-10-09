@@ -1,0 +1,27 @@
+WITH tabelaDecadas AS (
+  SELECT
+    nome,
+    TRUNCATE((ano - 1950) / 10) * 10 + 1950 AS decada,
+    SUM(total) AS total_decada,
+    RANK() OVER (PARTITION BY TRUNCATE((ano - 1950) / 10) * 10 + 1950 ORDER BY SUM(total) DESC) AS posicao
+  FROM
+    tabelanomes
+  WHERE
+    ano >= 1950
+  GROUP BY
+    TRUNCATE((ano - 1950) / 10) * 10 + 1950,
+    nome
+)
+SELECT
+  nome,
+  decada,
+  total_decada,
+  posicao
+FROM
+  tabelaDecadas
+WHERE
+  posicao <= 3
+ORDER BY
+  decada,
+  posicao;
+
