@@ -1,0 +1,8 @@
+docker pull jupyter/all-spark-notebook 
+
+docker run -it -v "<PATH>:/dados" -p 8888:8888 jupyter/all-spark-notebook
+#rodando o container,fazendo o bind mount do arquivo Readme a ser utilizado, como instruido
+
+docker ps
+
+docker exec -it <container id> pyspark
