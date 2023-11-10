@@ -17,3 +17,10 @@ s3 = boto3.client(
     aws_access_key_id=ACCESS_KEY_ID,
     aws_secret_access_key=SECRET_ACCESS_KEY
 )
+
+#create a new folder with name = current date, and upload a file to that gucket
+s3.put_object(Bucket=BUCKET_NAME, Key='Raw/Local/CSV/Movies/26|10|23/') 
+
+s3.upload_file(PATH_MOVIES, BUCKET_NAME, KEY_MOVIES)
+
+s3.upload_file(PATH_SERIES, BUCKET_NAME, KEY_SERIES)
