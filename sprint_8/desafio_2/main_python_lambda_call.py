@@ -19,8 +19,8 @@ def create_payload(existing_payload, batch_number, id_batch):
 
 
 #donwloada and open file
-aws_access_key_id = 'AKIAZIW2UFDNKW3PZDP6'
-aws_secret_access_key = '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'
+aws_access_key_id = 'AKIAZIW2UFDNMJIPBJ74'
+aws_secret_access_key = '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'
 bucket_name = 'raw-zone-compasso'
 s3_file_key = 'raw-zone-compasso/Raw/Local/CSV/Movies/26|10|23/movies.csv'
 local_file_path = '/home/pedro/Desktop/rep-compasso/compas novo/compass/sprint_8/desafio 2/testes_de_produção/movies.csv'
