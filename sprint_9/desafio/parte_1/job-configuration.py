@@ -24,8 +24,8 @@ def update_worker_type(JobName, WorkerType, NumberOfWorkers,ScriptLocation):
         print(e)
 
 
-JobName ="moviesJSON-to-trusted"
-ScriptLocation = 's3://glue-jobscripts/moviesJSON-to-trusted.py'
+JobName ="join-tables-for-refining"
+ScriptLocation = 's3://glue-jobscripts/join-tables-for-refining.py'
 NumberOfWorkers = 2
 WorkerType = "G.1X"
 

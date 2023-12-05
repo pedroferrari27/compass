@@ -23,10 +23,7 @@ df = glueContext.create_dynamic_frame.from_options(
 "s3",
 {
 "paths": [
-source_file
-]
-},
-"csv",
+so"csv",
 {"withHeader": True, "separator":","},
 )
 

@@ -15,7 +15,7 @@ aws_access_key_id = 'AKIAZIW2UFDNKW3PZDP6'
 aws_secret_access_key = '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'
 bucket_name = 'raw-zone-compasso'
 s3_file_key = 'raw-zone-compasso/Raw/Local/CSV/Movies/26|10|23/movies.csv'
-local_file_path = '/home/pedro/Desktop/rep-compasso/compas novo/compass/sprint_8/desafio 2/testes_de_produção/movies.csv'
+local_file_path = '/home/pedro/Desktop/rep-compasso/compas novo/compass/sprint_8/desafio_2/testes_de_produção/movies.csv'
 
 # Create an S3 client
 s3 = boto3.client('s3', aws_access_key_id=aws_access_key_id, aws_secret_access_key=aws_secret_access_key)
