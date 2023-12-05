@@ -15,4 +15,6 @@ __resumos de aprendizado:__
 *[Sprint 1](https://github.com/pedroferrari27/compass/tree/main/sprint_1/resumos)
 
 
-![WhatsApp Image 2023-12-04 at 21 36 59](https://github.com/pedroferrari27/compass/assets/58122509/48044d97-48f0-4a2f-8013-2a02ee06ae35)
+
+
+<img src="https://github.com/pedroferrari27/compass/assets/58122509/48044d97-48f0-4a2f-8013-2a02ee06ae35" width="100" height="100"> 
