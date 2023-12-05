@@ -13,3 +13,8 @@ __sobre mim:__  atualmente cursando o curso de ciencia da computação, na unive
 __resumos de aprendizado:__
 
 *[Sprint 1](https://github.com/pedroferrari27/compass/tree/main/sprint_1/resumos)
+
+
+
+
+<img src="https://github.com/pedroferrari27/compass/assets/58122509/48044d97-48f0-4a2f-8013-2a02ee06ae35" width="100" height="100"> 
