@@ -29,8 +29,8 @@ def create_payload(existing_payload, batch_number, id_batch):
 
 
 #donwloada and open file
-aws_access_key_id = 'AKIAZIW2UFDNKW3PZDP6'
-aws_secret_access_key = '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'
+aws_access_key_id = '[key]'
+aws_secret_access_key = '[key]'
 bucket_name = 'raw-zone-compasso'
 s3_file_key = 'raw-zone-compasso/Raw/Local/CSV/Movies/26|10|23/movies.csv'
 local_file_path = '/home/pedro/Desktop/rep-compasso/compas novo/compass/sprint_8/desafio 2/testes_de_produção/movies.csv'
@@ -73,8 +73,8 @@ target_file =f"raw-zone-compasso/Raw/tmdb/json/{formatted_date}/responses/"
 lambda_client = boto3.client('lambda',region_name='us-east-1',aws_access_key_id= aws_access_key_id,aws_secret_access_key= aws_secret_access_key)
 
 Payload_data ={
-  "aws_access_key_id": "AKIAZIW2UFDNKW3PZDP6",
-  "aws_secret_access_key": "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",
+  "aws_access_key_id": "[key]",
+  "aws_secret_access_key": "[key]",
   "bucket_name": "raw-zone-compasso",
   "target_file": target_file,
 }

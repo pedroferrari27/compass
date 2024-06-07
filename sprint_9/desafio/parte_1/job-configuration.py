@@ -1,7 +1,7 @@
 import boto3
 
 def update_worker_type(JobName, WorkerType, NumberOfWorkers,ScriptLocation):
-    glue = boto3.client('glue', aws_access_key_id='AKIAZIW2UFDNKW3PZDP6', aws_secret_access_key='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')
+    glue = boto3.client('glue', aws_access_key_id='[key]', aws_secret_access_key='[key]')
 
     try:
         response = glue.update_job(

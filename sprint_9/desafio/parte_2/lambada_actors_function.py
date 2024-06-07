@@ -15,7 +15,7 @@ def fetch_movie_data(movie_id):
     url = "https://api.themoviedb.org/3/movie/{}?language=en-US"
     headers = {
         "accept": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmMTk1ZmQ4YzlhZmVmMGRiMmJmODEzNmU1NDUyYjU3NCIsInN1YiI6IjY1NDkyODI5NmJlYWVhMDBjOWZkNzI5NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.TK_o1CliJTUqQ9x_q353CkHopwkxrxb_eGK9b-ZiaEc"
+        "Authorization": "[key]"
     }
     result = url.format(movie_id)
     response = requests.get(result, headers=headers)

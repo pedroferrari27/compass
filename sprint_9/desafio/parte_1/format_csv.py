@@ -11,8 +11,8 @@ from datetime import datetime
 from io import StringIO
 
 #donwloada and open file
-aws_access_key_id = 'AKIAZIW2UFDNKW3PZDP6'
-aws_secret_access_key = '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'
+aws_access_key_id = '[key]'
+aws_secret_access_key = '[key]'
 bucket_name = 'raw-zone-compasso'
 s3_file_key = 'raw-zone-compasso/Raw/Local/CSV/Movies/26|10|23/movies.csv'
 local_file_path = '/home/pedro/Desktop/rep-compasso/compas novo/compass/sprint_8/desafio_2/testes_de_produção/movies.csv'
